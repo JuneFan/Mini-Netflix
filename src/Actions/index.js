@@ -1,15 +1,22 @@
 import findIndex from 'lodash/findIndex';
-import data from '../Data/Data.json';
 import {GET_INITIAL_STATE, REMOVE_FROM_MYLIST, ADD_FROM_RECOMMENDLIST} from '../Actiontypes';
 
 
 export function getMovieList(){
-    return function(dispatch,getState){
-        const curState = data ;
-        dispatch({
-            type: GET_INITIAL_STATE,
-            data: curState
+    return function(dispatch,getState){ 
+        fetch('Data.json')
+        .then((res) =>{
+            return res.json();
         })
+        .then((data) => {
+            dispatch({
+                type: GET_INITIAL_STATE,
+                data: data
+            })
+        })
+        .catch(e => {
+            console.log(e);
+            })
     }
 }
 
