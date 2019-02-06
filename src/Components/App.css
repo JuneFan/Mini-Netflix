@@ -1,5 +1,6 @@
 *{
   box-sizing: border-box;
+  color: white;
   overflow-y: overlay;
   margin: 0;
   padding: 0;
@@ -10,6 +11,7 @@
 .app {
   position: relative;
   padding: 20px;
+  background-color: black;
   height: 100vh;
 }
 
