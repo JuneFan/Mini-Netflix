@@ -1,0 +1,77 @@
+*{
+  box-sizing: border-box;
+  color:white;
+  overflow-y: overlay;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.app {
+  position: relative;
+  padding: 20px;
+  background: url("https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2019/01/16/Pictures/new-age-of-streaming_1eb365ec-1946-11e9-9a47-fd04d5270281.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header {
+  display: block;
+	height: 15vh;
+	width: 25vw;
+  left: 3em;
+  position: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(241, 28, 28); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(184, 24, 24); 
+}
+
+.showbody {
+  margin-top:9em;
+  margin-left:3em;
+  height: calc(70vh - 20px)
+}
+
+.list-title {
+  position: fixed;
+  bottom: 0px;
+  left:3em;
+  margin-top:1vh;
+  height: 10vh;
+
+}
+.my-list-title {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    width: 80vw;
+  }
+  .list-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+
+
